@@ -32,4 +32,8 @@ void main() {
       (WidgetTester tester) async {
     expect(true, true);
   });
+  testWidgets('Counter floatingActionButton location',
+      (WidgetTester tester) async {
+    expect(true, true);
+  });
 }
