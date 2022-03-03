@@ -27,4 +27,9 @@ void main() {
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
   });
+
+  testWidgets('Counter primarySwatch color is red',
+      (WidgetTester tester) async {
+    expect(true, false);
+  });
 }
