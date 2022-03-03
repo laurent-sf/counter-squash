@@ -28,10 +28,6 @@ void main() {
     expect(find.text('1'), findsOneWidget);
   });
 
-  testWidgets('Counter primarySwatch color is red',
-      (WidgetTester tester) async {
-    expect(true, true);
-  });
   testWidgets('Counter floatingActionButton location',
       (WidgetTester tester) async {
     expect(true, true);
