@@ -26,6 +26,27 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('1'), findsNothing);
+    expect(find.text('2'), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('2'), findsNothing);
+    expect(find.text('3'), findsOneWidget);
+
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has not incremented.
+    expect(find.text('3'), findsOneWidget);
+    expect(find.text('4'), findsNothing);
   });
 
   testWidgets('Counter primarySwatch color is red',
